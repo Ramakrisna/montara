@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Welcome to Montara's COVID-19 Tracking Platform</h1>
+    {% if current_user.is_authenticated %}
+    <button type="button" onclick="window.location.href='{{ url_for('report', sick=True) }}'">Press Me If You're Sick</button>
+    {% endif %}
+{% endblock %}

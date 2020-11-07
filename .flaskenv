@@ -1,0 +1,4 @@
+FLASK_APP=montara.py
+FLASK_ENV=development
+MAIL_SERVER=localhost
+MAIL_PORT=8025

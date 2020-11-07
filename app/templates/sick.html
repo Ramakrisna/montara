@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png', _external=True) }}"/>
+        {% if title %}
+        <title>{{ title }}</title>
+        {% else %}
+        <title>Montara</title>
+        {% endif %}
+    </head>
+    <body>
+        <h1>You don't feel well, please go home and rest</h1>
+    </body>
+</html>
